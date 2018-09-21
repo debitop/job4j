@@ -24,5 +24,26 @@ public class MaxTest {
         int result = maxim.max(2, 1);
         assertThat(result, is(2));
     }
+
+    @Test
+    public void whenFirstLargerSecondLargerThird() {
+        Max maxim = new Max();
+        int result = maxim.max(3, 2, 1);
+        assertThat(result, is(3));
+    }
+
+    @Test
+    public void whenSecondLargerFirstLargerThird() {
+        Max maxim = new Max();
+        int result = maxim.max(2, 3, 1);
+        assertThat(result, is(3));
+    }
+
+    @Test
+    public void whenThirdLargerSecondLargerFirst() {
+        Max maxim = new Max();
+        int result = maxim.max(1, 2, 3);
+        assertThat(result, is(3));
+    }
 }
  
