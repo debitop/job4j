@@ -10,7 +10,7 @@ public class Factorial {
      * Вычисляем факториал.
      *
      * @param n - положительное целое число.
-     * @return сумма четных чисед.
+     * @return возвращает факториал.
      */
     public int calc(int n) {
         int f = 1;
