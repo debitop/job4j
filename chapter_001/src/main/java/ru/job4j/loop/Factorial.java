@@ -13,13 +13,12 @@ public class Factorial {
      * @return возвращает факториал.
      */
     public int calc(int n) {
-        int f = 1;
-        if (n == 0) {
-            return 1;
+        int fact = 1;
+        if (n != 0) {
+            for (int i = 1; i <= n; i++) {
+                fact *= i;
+            }
         }
-        for (int i = 1; i <= n; i++) {
-            f *= i;
-        }
-        return f;
+        return fact;
     }
 }
