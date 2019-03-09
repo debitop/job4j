@@ -24,7 +24,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenArrayHasLengh4Then_1() {
+    public void whenArrayHasLengh4Then1() {
         FindLoop find = new FindLoop();
         int[] input = new int[]{5, 10, 3};
         int value = 4;
