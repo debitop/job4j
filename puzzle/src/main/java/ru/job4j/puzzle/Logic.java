@@ -75,10 +75,11 @@ public class Logic {
                 vert[i] += table[j][i];
             }
         }
-        for (int i = 0; i < table.length; i++)
+        for (int i = 0; i < table.length; i++) {
             if (vert[i] == table.length || horiz[i] == table.length) {
                 result = true;
             }
+        }
         return result;
     }
 
